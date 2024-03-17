@@ -43,7 +43,7 @@ for turtle_object in range(6):
 
 screen.title("Turtle's Race")
 is_race_on = False
-user_turtle = screen.textinput("Bet on Turtle", "Which color turtle will win?").lower()
+user_turtle = screen.textinput("Bet on Turtle", "Which colour turtle will win?").lower()
 if user_turtle:
     is_race_on = True
 
@@ -55,7 +55,7 @@ if user_turtle in colors:
             if turtle_object.xcor()>200:
                 is_race_on = False
                 winner_turtle = colors[objects.index(turtle_object)]
-                winner = f"The color of winner turtle is {winner_turtle}"
+                winner = f"The colour of winner turtle is {winner_turtle}"
                 if user_turtle == winner_turtle:
                     result = "Your turtle won the race."
                     window(winner, result)
